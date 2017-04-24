@@ -68,7 +68,7 @@ paths:
 
   about-us: /about-us
   overview: /about-us/overview
-  partners: /about-us/partners
+  partners: /about-us/partners 
 
   ESabout-us: /es/acerca-de
   ESoverview: /es/acerca-de/descripción-general
