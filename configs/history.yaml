@@ -1,0 +1,285 @@
+##############################################################
+##############################################################
+# This is an example configuration provided by Wraith.
+# Feel free to amend for your own requirements.
+# ---
+# This particular config is intended to demonstrate how
+# to use Wraith in 'history' mode, which is best suited to
+# making sure your site's appearance remains consistent over
+# time.
+#
+# `wraith history history.yaml` # generate base screenshots
+# `wraith latest history.yaml`  # take new shots and compare
+#
+##############################################################
+##############################################################
+
+# (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "casperjs"
+
+# (required) The domain to take screenshots of.
+domains:
+  prod: "http://www.disasterassistance.gov"
+
+# (required) The paths to capture. This particular config is using casperjs, so we can take screenshots of selectors rather than the entire page.
+paths:
+  home: /
+  EShome: /es
+
+  get-assistance: /get-assistance
+  address-lookup: /address-lookup
+  find-assistance: /get-assistance/find-assistance
+  assistance-by-category: /get-assistance/assistance-by-egory
+  assistance-by-federal-agency: /get-assistance/assistance-by-federal-agency
+  other-recovery-help: /get-assistance/other-recovery-help
+  application-checklist: /get-assistance/application-checklist
+  forms: /get-assistance/
+
+  ESget-assistance: /es/obtener-asistencia
+  ESaddress-lookup: /es/buscador-de-direcciones
+  ESfind-assistance: /es/obtener-asistencia/encuentre-asistencia
+  ESassistance-by-category: /es/obtener-asistencia/asistencia-por-egoría
+  ESassistance-by-federal-agency: /es/obtener-asistencia/asistencia-por-agencia-federal
+  ESother-recovery-help: /es/obtener-asistencia/otra-ayuda-para-recuperación
+  ESapplication-checklist: /es/obtener-asistencia/lista-de-verificación-para-aplicarse
+  ESforms: /es/obtener-asistencia/formularios
+
+  information: /information
+  news-feeds: /information/news-feeds
+  immediate-needs: /information/immediate-needs
+  moving-forward: /information/moving-forward
+  disabilities: /information/disabilities-access-and-functional-needs
+  older-americans: /information/older-americans
+  children-and-families: /information/children-and-families
+  disaster-types: /information/disaster-types
+  foreign-disasters: /information/foreign-disasters
+  fact-sheets: /information/fact-sheets
+
+  ESinformation: /es/información
+  ESnews-feeds: /es/información/canales-de-noticias
+  ESimmediate-needs: /es/información/necesidades-inmediatas
+  ESmoving-forward: /es/información/próximo-paso
+  ESdisabilities: /es/información/discapacidades-o-necesidades-funcionales-y-de-acceso
+  ESolder-americans: /es/información/adultos-mayores-estadounidenses
+  ESchildren-and-families: /es/información/niños-y-familias
+  ESdisaster-types: /es/información/los-recursos-del-desastre 
+  ESforeign-disasters: /es/información/desastres-en-el-extranjero
+  ESfact-sheets: /es/información/hojas-de-datos
+
+  about-us: /about-us
+  overview: /about-us/overview
+  partners: /about-us/partners
+
+  ESabout-us: /es/acerca-de
+  ESoverview: /es/acerca-de/descripción-general
+  ESpartners: /es/acerca-de/socios
+
+  help: /help
+  faqs: /help/faqs
+  contact-us: /help/contact-us
+  privacy-policy: /help/privacy-policy
+  accessibility: /help/accessibility
+  download-plug-ins: /help/download-plug-ins
+
+  help: /help
+  faqs: /help/faqs
+  contact-us: /help/contact-us
+  privacy-policy: /help/privacy-policy
+  accessibility: /help/accessibility
+  download-plug-ins: /help/download-plug-ins
+
+  foa4450: /get-assistance/forms-of-assistance/4450
+  fedFOA4450: /get-assistance/forms-of-assistance/4450?s=1&id=1
+  foa4451: /get-assistance/forms-of-assistance/4451
+  foa4452: /get-assistance/forms-of-assistance/4452
+  foa4453: /get-assistance/forms-of-assistance/4453
+  foa4454: /get-assistance/forms-of-assistance/4454
+  foa4457: /get-assistance/forms-of-assistance/4457
+  foa4459: /get-assistance/forms-of-assistance/4459
+  foa4460: /get-assistance/forms-of-assistance/4460
+  foa4461: /get-assistance/forms-of-assistance/4461
+  foa4464: /get-assistance/forms-of-assistance/4464
+  foa4465: /get-assistance/forms-of-assistance/4465
+  foa4466: /get-assistance/forms-of-assistance/4466
+  foa4467: /get-assistance/forms-of-assistance/4467
+  foa4468: /get-assistance/forms-of-assistance/4468
+  foa4469: /get-assistance/forms-of-assistance/4469
+  foa4470: /get-assistance/forms-of-assistance/4470
+  foa4471: /get-assistance/forms-of-assistance/4471
+  foa4473: /get-assistance/forms-of-assistance/4473
+  foa4474: /get-assistance/forms-of-assistance/4474
+  foa4476: /get-assistance/forms-of-assistance/4476
+  foa4477: /get-assistance/forms-of-assistance/4477
+  foa4479: /get-assistance/forms-of-assistance/4479
+  foa4480: /get-assistance/forms-of-assistance/4480
+  foa4481: /get-assistance/forms-of-assistance/4481
+  foa4482: /get-assistance/forms-of-assistance/4482
+  foa4483: /get-assistance/forms-of-assistance/4483
+  foa4484: /get-assistance/forms-of-assistance/4484
+  foa4485: /get-assistance/forms-of-assistance/4485
+  foa4486: /get-assistance/forms-of-assistance/4486
+  for4487: /get-assistance/forms-of-assistance/4487
+  foa4488: /get-assistance/forms-of-assistance/4488
+  foa4489: /get-assistance/forms-of-assistance/4489
+  foa4490: /get-assistance/forms-of-assistance/4490
+  foa4491: /get-assistance/forms-of-assistance/4491
+  foa4492: /get-assistance/forms-of-assistance/4492
+  foa4493: /get-assistance/forms-of-assistance/4493
+  foa4494: /get-assistance/forms-of-assistance/4494
+  foa4495: /get-assistance/forms-of-assistance/4495
+  foa4496: /get-assistance/forms-of-assistance/4496
+  foa4497: /get-assistance/forms-of-assistance/4497
+  foa4498: /get-assistance/forms-of-assistance/4498
+  foa4499: /get-assistance/forms-of-assistance/4499
+  foa4500: /get-assistance/forms-of-assistance/4500
+  foa4502: /get-assistance/forms-of-assistance/4502
+  foa4503: /get-assistance/forms-of-assistance/4503
+  foa4505: /get-assistance/forms-of-assistance/4505
+  foa4506: /get-assistance/forms-of-assistance/4506
+  foa4509: /get-assistance/forms-of-assistance/4509
+  foa4510: /get-assistance/forms-of-assistance/4510
+  foa4526: /get-assistance/forms-of-assistance/4626
+  foa4527: /get-assistance/forms-of-assistance/4627
+  foa4628: /get-assistance/forms-of-assistance/4628
+  foa4629: /get-assistance/forms-of-assistance/4629
+  foa4630: /get-assistance/forms-of-assistance/4630
+  foa4698: /get-assistance/forms-of-assistance/4698
+  foa4700: /get-assistance/forms-of-assistance/4700
+  foa4703: /get-assistance/forms-of-assistance/4703
+  foa4707: /get-assistance/forms-of-assistance/4707
+  foa4709: /get-assistance/forms-of-assistance/4709
+  foa4711: /get-assistance/forms-of-assistance/4711
+  foa4713: /get-assistance/forms-of-assistance/4713
+  foa4715: /get-assistance/forms-of-assistance/4715
+  foa4717: /get-assistance/forms-of-assistance/4717
+  foa4719: /get-assistance/forms-of-assistance/4719
+  foa4721: /get-assistance/forms-of-assistance/4721
+  foa4723: /get-assistance/forms-of-assistance/4723
+  foa4725: /get-assistance/forms-of-assistance/4725
+  foa5769: /get-assistance/forms-of-assistance/5769
+  foa5778: /get-assistance/forms-of-assistance/5778
+  foa5779: /get-assistance/forms-of-assistance/5779
+  foa5780: /get-assistance/forms-of-assistance/5780
+
+  ESfoa4450: /es/obtener-asistencia/forma-de-asistencia/4450
+  ESfedFOA4450: /es/obtener-asistencia/forma-de-asistencia/4450?s=1&id=1
+  ESfoa4451: /es/obtener-asistencia/forma-de-asistencia/4451
+  ESfoa4452: /es/obtener-asistencia/forma-de-asistencia/4452
+  ESfoa4453: /es/obtener-asistencia/forma-de-asistencia/4453
+  ESfoa4454: /es/obtener-asistencia/forma-de-asistencia/4454
+  ESfoa4457: /es/obtener-asistencia/forma-de-asistencia/4457
+  ESfoa4459: /es/obtener-asistencia/forma-de-asistencia/4459
+  ESfoa4460: /es/obtener-asistencia/forma-de-asistencia/4460
+  ESfoa4461: /es/obtener-asistencia/forma-de-asistencia/4461
+  ESfoa4464: /es/obtener-asistencia/forma-de-asistencia/4464
+  ESfoa4465: /es/obtener-asistencia/forma-de-asistencia/4465
+  ESfoa4466: /es/obtener-asistencia/forma-de-asistencia/4466
+  ESfoa4467: /es/obtener-asistencia/forma-de-asistencia/4467
+  ESfoa4468: /es/obtener-asistencia/forma-de-asistencia/4468
+  ESfoa4469: /es/obtener-asistencia/forma-de-asistencia/4469
+  ESfoa4470: /es/obtener-asistencia/forma-de-asistencia/4470
+  ESfoa4471: /es/obtener-asistencia/forma-de-asistencia/4471
+  ESfoa4473: /es/obtener-asistencia/forma-de-asistencia/4473
+  ESfoa4474: /es/obtener-asistencia/forma-de-asistencia/4474
+  ESfoa4476: /es/obtener-asistencia/forma-de-asistencia/4476
+  ESfoa4477: /es/obtener-asistencia/forma-de-asistencia/4477
+  ESfoa4479: /es/obtener-asistencia/forma-de-asistencia/4479
+  ESfoa4480: /es/obtener-asistencia/forma-de-asistencia/4480
+  ESfoa4481: /es/obtener-asistencia/forma-de-asistencia/4481
+  ESfoa4482: /es/obtener-asistencia/forma-de-asistencia/4482
+  ESfoa4483: /es/obtener-asistencia/forma-de-asistencia/4483
+  ESfoa4484: /es/obtener-asistencia/forma-de-asistencia/4484
+  ESfoa4485: /es/obtener-asistencia/forma-de-asistencia/4485
+  ESfoa4486: /es/obtener-asistencia/forma-de-asistencia/4486
+  ESfoa4487: /es/obtener-asistencia/forma-de-asistencia/4487
+  ESfoa4488: /es/obtener-asistencia/forma-de-asistencia/4488
+  ESfoa4489: /es/obtener-asistencia/forma-de-asistencia/4489
+  ESfoa4490: /es/obtener-asistencia/forma-de-asistencia/4490
+  ESfoa4491: /es/obtener-asistencia/forma-de-asistencia/4491
+  ESfoa4492: /es/obtener-asistencia/forma-de-asistencia/4492
+  ESfoa4493: /es/obtener-asistencia/forma-de-asistencia/4493
+  ESfoa4494: /es/obtener-asistencia/forma-de-asistencia/4494
+  ESfoa4495: /es/obtener-asistencia/forma-de-asistencia/4495
+  ESfoa4496: /es/obtener-asistencia/forma-de-asistencia/4496
+  ESfoa4497: /es/obtener-asistencia/forma-de-asistencia/4497
+  ESfoa4498: /es/obtener-asistencia/forma-de-asistencia/4498
+  ESfoa4499: /es/obtener-asistencia/forma-de-asistencia/4499
+  ESfoa4500: /es/obtener-asistencia/forma-de-asistencia/4500
+  ESfoa4502: /es/obtener-asistencia/forma-de-asistencia/4502
+  ESfoa4503: /es/obtener-asistencia/forma-de-asistencia/4503
+  ESfoa4505: /es/obtener-asistencia/forma-de-asistencia/4505
+  ESfoa4506: /es/obtener-asistencia/forma-de-asistencia/4506
+  ESfoa4509: /es/obtener-asistencia/forma-de-asistencia/4509
+  ESfoa4510: /es/obtener-asistencia/forma-de-asistencia/4510
+  ESfoa4626: /es/obtener-asistencia/forma-de-asistencia/4626
+  ESfoa4627: /es/obtener-asistencia/forma-de-asistencia/4627
+  ESfoa4628: /es/obtener-asistencia/forma-de-asistencia/4628
+  ESfoa4629: /es/obtener-asistencia/forma-de-asistencia/4629
+  ESfoa4630: /es/obtener-asistencia/forma-de-asistencia/4630
+  ESfoa4698: /es/obtener-asistencia/forma-de-asistencia/4698
+  ESfoa4700: /es/obtener-asistencia/forma-de-asistencia/4700
+  ESfoa4703: /es/obtener-asistencia/forma-de-asistencia/4703
+  ESfoa4707: /es/obtener-asistencia/forma-de-asistencia/4707
+  ESfoa4709: /es/obtener-asistencia/forma-de-asistencia/4709
+  ESfoa4711: /es/obtener-asistencia/forma-de-asistencia/4711
+  ESfoa4713: /es/obtener-asistencia/forma-de-asistencia/4713
+  ESfoa4715: /es/obtener-asistencia/forma-de-asistencia/4715
+  ESfoa4717: /es/obtener-asistencia/forma-de-asistencia/4717
+  ESfoa4719: /es/obtener-asistencia/forma-de-asistencia/4719
+  ESfoa4721: /es/obtener-asistencia/forma-de-asistencia/4721
+  ESfoa4723: /es/obtener-asistencia/forma-de-asistencia/4723
+  ESfoa4725: /es/obtener-asistencia/forma-de-asistencia/4725
+  ESfoa5769: /es/obtener-asistencia/forma-de-asistencia/5769
+  ESfoa5778: /es/obtener-asistencia/forma-de-asistencia/5778
+  ESfoa5779: /es/obtener-asistencia/forma-de-asistencia/5779
+  ESfoa5780: /es/obtener-asistencia/forma-de-asistencia/5780
+
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+before_capture: 'javascript/wait--casper.js' 
+
+# (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  #- 320
+  #- 600x768
+  #- 768
+  #- 1024
+  - 1280
+
+# (optional) Resize to each screen width (efficient), or reload at each screen width (costly). Default: 'reload'
+resize_or_reload: 'resize'
+
+# (required for history mode, otherwise optional) The directory that your base screenshots will be stored in.
+history_dir: 'shots_base'
+
+# (required) The directory that your latest screenshots will be stored in
+directory: 'shots'
+
+# (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_first
+
+# (optional) Choose to run Wraith in verbose mode, for easier debugging. Default: false
+verbose: true
+
+# (optional) Color to highlight the image diff. Default: 'blue'
+highlight_color: red
+
+# (optional) Parameters to pass to Phantom/Casper command line. Default: '--ignore-ssl-errors=true --ssl-protocol=tlsv1'
+phantomjs_options: ''
