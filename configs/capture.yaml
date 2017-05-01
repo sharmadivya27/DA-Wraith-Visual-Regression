@@ -25,7 +25,7 @@ paths:
   get-assistance: /get-assistance/?mobile=unL9HuS
   address-lookup: /address-lookup/?mobile=unL9HuS
   find-assistance: /get-assistance/find-assistance/?mobile=unL9HuS
-  assistance-by-category: /get-assistance/assistance-by-egory/?mobile=unL9HuS
+  assistance-by-category: /get-assistance/assistance-by-category/?mobile=unL9HuS
   assistance-by-federal-agency: /get-assistance/assistance-by-federal-agency/?mobile=unL9HuS
   other-recovery-help: /get-assistance/other-recovery-help/?mobile=unL9HuS
   application-checklist: /get-assistance/application-checklist/?mobile=unL9HuS
